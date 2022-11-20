@@ -17,6 +17,13 @@
                         degrees[i][j] = degrees[i-1][j-1] + degrees[i-1][j];
                     }
                 }
+                var pascal = new Object();
+                pascal.num = degrees;
+
+                for(var prop in pascal){
+                    document.write("<br>"+pascal[prop]);
+                    console.log(pascal[prop]);
+                }
             }
 
             return degrees;
