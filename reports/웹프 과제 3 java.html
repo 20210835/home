@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>자바스크립트 프로그래밍</title>
-    <script>
+        <script>
         function new_row(prev_row) {
             var degrees = [];
 
             for(var i=0; i < prev_row; i++){
-                for(var j=0; j <= i; j++){
-                    if (i == j){
-                        degrees[i][j] = 1;
-                    }else if(j == 0) {
+                degrees[i] = new Array(i+1);
+
+                for(var j=0; j < i+1; j++){
+                    if (i === 0 || j === i){
                         degrees[i][j] = 1;
                     }else {
-                        degrees[i][j] = degrees[i-1][j-1][j];
+                        degrees[i][j] = degrees[i-1][j-1] + degrees[i-1][j];
                     }
                 }
             }
 
-            return degrees
+            return degrees;
+        };
 
-        }
     </script>
 </head>
 <body>
@@ -70,7 +70,8 @@
 <h2>2. 파스칼의 삼각형</h2>
 <hr>
 <script>
-    var height = prompt("삼각형의 높이", 100);
+    var height = prompt("삼각형의 높이", );
+    height = parseInt(height);
     new_row(height);
 </script>
 </body>
