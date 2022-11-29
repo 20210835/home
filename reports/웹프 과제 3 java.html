@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>자바스크립트 프로그래밍</title>
-        <script>
-        function new_row(prev_row) {
+    <script>
+    function new_row(prev_row) {
             var degrees = [];
 
-            for(var i=0; i < prev_row; i++){
+             for(var i=0; i < prev_row; i++){
                 degrees[i] = new Array(i+1);
-
                 for(var j=0; j < i+1; j++){
-                    if (i === 0 || j === i){
+                    if (j === 0 || j === i){
                         degrees[i][j] = 1;
                     }else {
                         degrees[i][j] = degrees[i-1][j-1] + degrees[i-1][j];
@@ -28,56 +27,21 @@
 
             return degrees;
         };
-
     </script>
 </head>
 <body>
 <h2>1. 2진수 입력 받아 16진수 출력</h2>
 <hr>
 <script>
-    var number16;
-    var number2 = prompt("2진수를 입력하세요","")
-    switch(number2){
-        case "0000" : number16=0;
-        break;
-        case "0001" : number16=1;
-        break;
-        case "0010" : number16=2;
-        break;
-        case "0011" : number16=3;
-        break;
-        case "0100" : number16=4;
-        break;
-        case "0101" : number16=5;
-        break;
-        case "0110" : number16=6;
-        break;
-        case "0111" : number16=7;
-        break;
-        case "1000" : number16=8;
-        break;
-        case "1001" : number16=9;
-        break;
-        case "1010" : number16= 'A';
-        break;
-        case "1011" : number16='B';
-        break;
-        case "1100" : number16='C';
-        break;
-        case "1101" : number16='D';
-        break;
-        case "1110" : number16= 'E';
-        break;
-        case "1111" : number16='F';
-        break;
-    }
+    var number2 = prompt("2진수를 입력하세요","");
+    var number16 = parseInt(number2, 2).toString(16);
     document.write("16 진수 값 : "+ number16);
 </script>
 <hr>
 <h2>2. 파스칼의 삼각형</h2>
 <hr>
 <script>
-    var height = prompt("삼각형의 높이", );
+    var height = prompt("삼각형의 높이", 7);
     height = parseInt(height);
     new_row(height);
 </script>
