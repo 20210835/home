@@ -6,9 +6,8 @@
     <script>
     function new_row(prev_row) {
             var degrees = [];
-
-             for(var i=0; i < prev_row; i++){
-                degrees[i] = new Array(i+1);
+            for(var i=0; i < prev_row; i++){
+                degrees[i] = new Array();
                 for(var j=0; j < i+1; j++){
                     if (j === 0 || j === i){
                         degrees[i][j] = 1;
