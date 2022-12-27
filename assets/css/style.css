@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #c3e6fc;
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #c2d3fd;
   overflow-y: auto;
 }
 
@@ -86,7 +86,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid #ebd6d9;
 }
 
 #header .profile h1 {
@@ -108,7 +108,7 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #775c60;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -121,7 +121,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #775c60;
   color: #fff;
   text-decoration: none;
 }
@@ -380,7 +380,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #c3e6fc;
   float: left;
   line-height: 0;
 }
@@ -1079,9 +1079,9 @@ section {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 283px;
   z-index: 9999;
-  background: #040b14;
+  background: #d598a3;
 }
 
 #footer .copyright {
