@@ -45,7 +45,7 @@
 
       <div class="profile">
         <img src="assets/img/portfolio/KakaoTalk_20221226_210256115_01.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">저의 홈페이지에 어서 오세요!</a></h1>
+        <h1 class="text-light"><a href="index.html">어서 오세요!</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.instagram.com/su_minionz/" class="instagram"><i class="bx bxl-instagram"></i></a>
         </div>
@@ -68,8 +68,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>20210835 김수민</h1>
-      <p> 좋아하는 <span class="typed" data-typed-items="활동, 가수, 영화, 음식"></span></p>
+      <h1>My favorite things</h1>
+      <p> 좋아하는 <span class="typed" data-typed-items="운동, 가수, 음식, 영화"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -77,26 +77,29 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="col-lg-12 p-4 pt-lg-0 content" data-aos="fade-left">
             <h3>간단한 설명</h3>
-            <p class="fst-italic">
+            <p>
               내가 좋아하는 다양한 것들을 여러분들에게 소개하고자 한다.
             </p>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-4">
+                <img src="assets/img/portfolio/KakaoTalk_20221226_210256115_01.jpg" alt="" class="img-fluid rounded">
+              </div>
+              <div class="col-lg-4">
                 <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>이름:</strong> <span>김수민</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>생일:</strong> <span>2002/ 08/ 03</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>나이:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>전공:</strong> <span>정보통계학과</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>취미:</strong> <span>춤추기, 노래 듣기</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-4">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>가족 관계:</strong> <span>자매중 막내. 4인가족</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>가족:</strong> <span>자매중 막내. 4인가족</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>혈액형:</strong> <span>A형</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>MBTI:</strong> <span>ISFP</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>성격:</strong> <span>사람 만나는 것을 좋아하고, 밝은 성격이지만 집순이</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>성격:</strong> <span>밝은 성격. 집순이</span></li>
                 </ul>
               </div>
         </div>
@@ -392,6 +395,70 @@
       </div>
 
     </section><!-- End Testimonials Section -->
+        <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>미사강변대로 135, 경기도, 12914</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>coolsely@naver.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+82 010 9107 1468</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/search/%EB%AF%B8%EC%82%AC%EA%B0%95%EB%B3%80%EB%8C%80%EB%A1%9C135/data=!3m1!4b1" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
